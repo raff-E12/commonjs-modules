@@ -3,9 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Moduli in Js</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: #D9863D;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .header-sc{
+            width: 100%;
+            background-color: #F2AC57;
+            padding: 20px;
+            color: white;
+            font-weight: 600;
+        }
+
+        .container-card{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 10px;
+            gap: 10px;
+        }
+
+        .card-name{
+            width: 300px;
+            border: 5px solid #F2A81D;
+            padding: 10px;
+            background-color: #F2C230;
+            text-align: left;
+            font-size: 1em;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .card-name b{
+            color: white;
+        }
+    </style>
 </head>
 <body>
-    
+    <header class="header-sc">
+        <h1>Card in Js</h1>
+    </header>
+    <section class="container-card" id="parent-node"></section>
+    <script type="module" src="people.js"></script>
 </body>
 </html>
