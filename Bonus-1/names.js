@@ -1,9 +1,15 @@
 console.log(">> Sezione Sul Nome Completo");
 
-export default function HandlePersonName (firstname, lastname){
-    let name_ps = firstname;
-    let last_name_ps = lastname;
-    const result = `${name_ps} ${last_name_ps}.`;
-    const obj_result = {firstName: name_ps, lastName: last_name_ps, complete: result};
+export default function HandlePersonName () {
+    const names = ["Luca", "Marco", "Giulia", "Alessandro", "Sara", "Matteo", "Francesca", "Davide", "Martina", "Andrea"];
+    const lastnames = ["Bianchi", "Rossi", "Ferri", "Conti", "Moretti", "Galli", "De Luca", "Rizzo", "Colombo", "Fontana"];
+    let obj_result = {};
+
+    for (const key in names) {
+        obj_result[key] = {name: names[key], lastname: lastnames[key], fullname: `${names[key]} ${lastnames[key]}`};
+    }
+
     return obj_result;
 }
+
+console.log(HandlePersonName())
